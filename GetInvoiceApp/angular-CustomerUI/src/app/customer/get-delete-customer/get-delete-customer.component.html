@@ -1,0 +1,39 @@
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+        <th>CustomerId</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+        <th>Phone_Number</th>
+        <th>Country_code</th>
+        <th>Gender</th>
+        <th>Balance</th>
+        <th>Options</th>
+        
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let customer of CustomerList$">
+            <td>{{customer.CustomerId}}</td>
+            <td>{{customer.Firstname}}</td>
+            <td>{{customer.Lastname}}</td>
+            <td>{{customer.Email}}</td>
+            <td>{{customer.Phone_Number}}</td>
+            <td>{{customer.Country_code}}</td>
+            <td>{{customer.Gender}}</td>
+            <td>{{customer.Balance}}</td>
+            <td>
+                <button type ="button" class="btn btn-light mr-1">
+                    Edit
+                </button>
+                <button type ="button" class="btn btn-light mr-1">
+                    Delete
+                </button>
+            </td>    
+
+        </tr>
+    </tbody>
+</table>
